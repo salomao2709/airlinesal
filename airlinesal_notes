@@ -1,0 +1,85 @@
+GET
+	INPUT - SELECT FLIGHT INFORMATIONS (PASSING SOME FILTERS TO IT)
+	RETURN - FLIGHTS AVAILABLE FOR THE INPUTED INFORMATIONS PARAMETERS
+
+POST
+	INPUT - INSERT A RESERVATION INFORMATION
+	RETURN - VOID (OR JUST A MESSAGE OF SUCCESS)
+
+PUT
+	INPUT - UPDATE RESERVATION INFORMATIONS (FILTER BY ID)
+	RETURN - VOID (OR JUST A MESSAGE OF SUCESS OR THE RESERVATION UPDATED)
+
+DELETE
+	INPUT - RESERVATION ID
+	RETURN - VOID (OR JUST A MESSAGE OF SUCCESS)
+
+
+CLASSES
+	CUSTOMER
+	RESERVATION
+	AIRPLANE
+	SEAT
+	FLIGHTCLASS (ECONOMIC BASIC, ECONOMIC CLASSIC, BUSINESS, ETC)
+	FLIGHT (FROM A TO B, DATE, HOUR, ETC)
+
+------------------------------------------------------------------
+
+	CUSTOMER
+		name, date of birth, country, province, email
+	
+	RESERVATION
+		customer, flight, fightclass, airplane, seat
+	
+	AIRPLANE
+		id, description
+	
+	SEAT
+		id, description
+	
+	FLIGHTCLASS (enum)
+		basic, economic, business (pode ser um enum)
+	
+	FLIGHT (FROM A TO B, DATE, HOUR, ETC)
+		from, to, date and hour
+
+------------------------------------------------------------------
+STORY
+------------------------------------------------------------------
+
+return flights
+	1 customer insert the informations bellow
+		get
+		. request - origem (from), destino (to), data da viagem de ida (apenas ida pra simplificar)
+		. response - returned the list of flights available for that from/to and date.
+		business rules
+			1.1 
+
+choose a flight
+	2 customer choose a flight
+		post
+		. request - customer choose a flight from the list.
+			pass into JSON object the customer.id and the flight.id (reservation
+
+create a reservation
+	3 customer insert informations bellow
+		post
+		. request - name, date of birth, country, state, email
+		. response - message "Reservation booked successfuly" or "Please try again"
+
+------------------------------------------------------------------
+GITHUB
+------------------------------------------------------------------
+
+//to config authentication
+git config --global user.name "SalomaoFerreira"
+git config --global user.email "salomao1991@gmail.com"
+git config --list
+
+echo "# salomao2709" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/salomao2709/salomao2709.git
+git push -u origin main
