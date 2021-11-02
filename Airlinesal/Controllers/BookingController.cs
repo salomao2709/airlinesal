@@ -15,7 +15,7 @@ namespace Airlinesal.Controllers
         {
             List<Flight> flights = new List<Flight>();
             Flight flight = new Flight();
-            flight.Number = 1;
+            flight.Id = 1;
             flight.From = "Sao Paulo";
             flight.To = "Montreal";
             flights.Add(flight);

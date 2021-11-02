@@ -20,4 +20,3 @@ C:\source\Airlinesal\Airlinesal\obj\Debug\net5.0\Airlinesal.dll
 C:\source\Airlinesal\Airlinesal\obj\Debug\net5.0\ref\Airlinesal.dll
 C:\source\Airlinesal\Airlinesal\obj\Debug\net5.0\Airlinesal.pdb
 C:\source\Airlinesal\Airlinesal\obj\Debug\net5.0\Airlinesal.genruntimeconfig.cache
-C:\source\Airlinesal\Airlinesal\obj\Debug\net5.0\Airlinesal.csproj.AssemblyReference.cache

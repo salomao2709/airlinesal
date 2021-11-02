@@ -11,5 +11,7 @@ namespace Airlinesal.Model
         public string From { get; set; }
         public string To { get; set; }
         public DateTime DateTimeToFlight { get; set; }
+
+        public Airplane Airplane { get; set; }
     }
 }

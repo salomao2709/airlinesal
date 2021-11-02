@@ -7,8 +7,8 @@ namespace Airlinesal.Model
 {
     public enum FlightClass
     {
-        Basic = 0,
-        Economic = 1,
-        Business = 2
+        Basic,
+        Economic,
+        Business
     }
 }

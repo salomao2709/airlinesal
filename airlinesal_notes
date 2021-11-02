@@ -50,10 +50,11 @@ STORY
 return flights
 	1 customer insert the informations bellow
 		get
-		. request - origem (from), destino (to), data da viagem de ida (apenas ida pra simplificar)
+		. request - origem (from), destino (to), data da viagem (apenas data de ida pra simplificar)
 		. response - returned the list of flights available for that from/to and date.
 		business rules
-			1.1 
+			1.1 - se algum voo disponivel, entao retornar os voo disponiveis para o dia
+			1.2 - se nenhum voo disponivel, entao retornar data indisponivel
 
 choose a flight
 	2 customer choose a flight
@@ -72,8 +73,8 @@ GITHUB
 ------------------------------------------------------------------
 
 //to config authentication
-git config --global user.name "SalomaoFerreira"
-git config --global user.email "salomao1991@gmail.com"
+git config --global user.name "username"
+git config --global user.email "username@email.com"
 git config --list
 
 echo "# salomao2709" >> README.md
@@ -83,3 +84,5 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/salomao2709/salomao2709.git
 git push -u origin main
+
+------------------------------------------------------------------
